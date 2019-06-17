@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 module.exports = {
-  outputDir: 'docs',
-  publicPath: './',
-};
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/vue-resume/dist/'
+    : '/'
+} 
