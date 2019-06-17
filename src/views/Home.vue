@@ -1,5 +1,7 @@
 <template>
-  <div class="home">home</div>
+  <div class="home">
+    <hello-world></hello-world>
+  </div>
 </template>
 
 <script>
@@ -9,6 +11,9 @@ import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'home',
-  components: {},
+  components: {
+    // eslint-disable-next-line vue/no-unused-components
+    HelloWorld,
+  },
 };
 </script>
