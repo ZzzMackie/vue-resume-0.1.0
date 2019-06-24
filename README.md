@@ -1,5 +1,5 @@
 # vue-resume
-
+# Version 0.1.0
 ## Project setup
 ```
 yarn install
