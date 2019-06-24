@@ -1,5 +1,5 @@
 <template>
-  <div class="hello" id="myChart" :style="{width: '300px', height: '300px'}"></div>
+  <div class="hello" id="myChart" :style="{width: '100vw', height: '100vh'}"></div>
 </template>
 
 <script>
@@ -10,6 +10,7 @@ require('echarts/lib/chart/bar');
 // 引入提示框和title组件
 require('echarts/lib/component/tooltip');
 require('echarts/lib/component/title');
+require('echarts/extension/bmap/bmap');
 
 export default {
   name: 'HelloWorld',
@@ -23,20 +24,18 @@ export default {
     draw() {
       // 基于准备好的dom，初始化echarts实例
       const myChart = echarts.init(document.getElementById('myChart'));
+      // eslint-disable-next-line no-undef
+      const map = new BMap.Map('temp-chart');
       myChart.setOption({
-        title: { text: 'ECharts 入门示例' },
-        tooltip: {},
-        xAxis: {
-          data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子'],
+        bmap: {
+          // 百度地图中心经纬度
+          center: [116.46, 39.92],
+          // 百度地图缩放
+          zoom: 4,
+          // 是否开启拖拽缩放，可以只设置 'scale' 或者 'move'
+          roam: true,
+          // 百度地图的自定义样式，见 http://developer.baidu.com/map/jsdevelop-11.htm
         },
-        yAxis: {},
-        series: [
-          {
-            name: '销量',
-            type: 'bar',
-            data: [5, 20, 36, 10, 10, 20],
-          },
-        ],
       });
     },
   },
@@ -59,4 +58,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>
