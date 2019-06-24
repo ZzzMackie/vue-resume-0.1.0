@@ -1,5 +1,8 @@
 # vue-resume
 # Version 0.1.0
+```
+demo:https://zzzmackie.github.io/vue-resume-0.1.0/dist/
+```
 ## Project setup
 ```
 yarn install
