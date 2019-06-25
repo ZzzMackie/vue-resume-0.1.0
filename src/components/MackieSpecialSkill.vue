@@ -4,7 +4,7 @@
 
 <script>
 import draw from "@/common/skillEchart.js";
-const echarts = require("echarts/lib/echarts");
+const ECHARTS = require("echarts/lib/echarts");
 export default {
   name: "MackieSpecialSkill",
   data() {
@@ -20,12 +20,12 @@ export default {
       this.partFive = "mackie_special_skill_responsive";
     }
   },
-  mounted() {
+  beforeDestroy() {
     this.drawList();
   },
   methods: {
     drawList() {
-      const myEchart = echarts.init(document.getElementById("special_skill"));
+      const myEchart = ECHARTS.init(document.getElementById("special_skill"));
       myEchart.setOption({
         // 标题
         title: {
