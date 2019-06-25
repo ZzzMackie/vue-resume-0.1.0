@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      non: 'javascritp:void();',
+      non: 'javascript:void();',
     };
   },
   methods: {
