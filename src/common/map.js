@@ -3,7 +3,7 @@ const echarts = require('echarts/lib/echarts');
 // 引用中国地图
 require('echarts/map/js/china.js');
 
-export default function (id) {
+export default function (id = 'friends_distribution') {
   const myChart = echarts.init(document.getElementById(id));
 
   // 排行前五城市

@@ -12,7 +12,10 @@ export default {
     return {};
   },
   mounted() {
-    drawECharts('friends_distribution');
+    this.$nextTick(function() {
+                drawECharts()
+      })
+    ;
   },
 };
 </script>

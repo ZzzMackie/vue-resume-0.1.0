@@ -1,8 +1,8 @@
 // 引入基本模板
-const echarts = require('echarts/lib/echarts');
+const ECHARTS = require('echarts');
 
-export default function (id) {
-  const myChart = echarts.init(document.getElementById(id));
+export default function (id = 'special_skill') {
+  const myChart = ECHARTS.init(document.getElementById(id));
   myChart.setOption({
     // 标题
     title: {
@@ -40,14 +40,14 @@ export default function (id) {
         radius: [30, 110],
         roseType: 'area',
         data: [
-          { value: 15, name: 'HTML5' },
-          { value: 15, name: 'CSS3' },
-          { value: 20, name: 'JavaScript' },
+          { value: 20, name: 'HTML5' },
+          { value: 20, name: 'CSS3' },
+          { value: 30, name: 'JavaScript' },
           { value: 20, name: 'jQuery' },
           { value: 20, name: 'Vue' },
-          { value: 15, name: 'Node' },
-          { value: 25, name: '微信小程序' },
-          { value: 15, name: '其他' },
+          { value: 10, name: 'Node' },
+          { value: 15, name: '微信小程序' },
+          { value: 10, name: '其他' },
         ],
       },
     ],
