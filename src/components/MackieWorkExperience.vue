@@ -13,20 +13,19 @@
 
 <script>
 export default {
-  name: "MackieWorkExperience",
+  name: 'MackieWorkExperience',
   data() {
     return {
-      mackieWorkExperience: "mackie_work_experience",
-      curWidth: 0
+      mackieWorkExperience: 'mackie_work_experience',
+      curWidth: 0,
     };
   },
   beforeMount() {
-    this.curWidth =
-      document.documentElement.clientWidth || document.body.clientWidth;
+    this.curWidth = document.documentElement.clientWidth || document.body.clientWidth;
     if (this.curWidth < 1600) {
-      this.partFive = "mackie_work_experience_responsive";
+      this.partFive = 'mackie_work_experience_responsive';
     }
-  }
+  },
 };
 </script>
 

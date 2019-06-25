@@ -19,14 +19,14 @@ export default {
   },
   data() {
     return {
-      non: 'javascritp:void();'
+      non: 'javascritp:void();',
     };
   },
-  methods:{
-    isUrl (item) {
+  methods: {
+    isUrl(item) {
       return item.url ? item.url : this.non;
-    }
-  }
+    },
+  },
 };
 </script>
 

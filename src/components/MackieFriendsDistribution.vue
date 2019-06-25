@@ -1,13 +1,18 @@
 <template>
-    <div class="mackie_friends_distribution">
+    <div class="mackie_friends_distribution" id="friends_distribution">
     </div>
 </template>
 
 <script>
+import drawECharts from '@/common/map.js';
+
 export default {
   name: 'MackieFriendsDistribution',
   data() {
     return {};
+  },
+  mounted() {
+    drawECharts('friends_distribution');
   },
 };
 </script>

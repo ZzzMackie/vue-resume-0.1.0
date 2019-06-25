@@ -7,6 +7,7 @@
 
 <script>
 import TextComp from '@/components/textcomp/TextComp';
+
 export default {
   name: 'MackieOther',
   data() {
@@ -31,8 +32,8 @@ export default {
       {
         tit: '三生三世官网',
         url: 'https://3s.qq.com/web201904/main.shtml',
-        context: '//3s.qq.com'
-      }]
+        context: '//3s.qq.com',
+      }],
     };
   },
   beforeMount() {

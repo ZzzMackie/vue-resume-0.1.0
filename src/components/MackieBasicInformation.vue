@@ -41,38 +41,38 @@ export default {
   border-image: url("~@/assets/border_image.png") 30 30 stretch;
   background: #18202d;
   font-size: 16px;
-  animation: leftIn 1s ;
-      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: leftIn 1s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   img {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
-    animation: leftIn 1s ;
+    animation: leftIn 1s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   ul {
     li {
       width: 100%;
       text-align: left;
-      animation: leftIn 1s ;
+      animation: leftIn 1s;
       animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      &:nth-of-type(2){
-          animation-delay: .1s;
+      &:nth-of-type(2) {
+        animation-delay: 0.1s;
       }
-      &:nth-of-type(3){
-          animation-delay: .2s;
+      &:nth-of-type(3) {
+        animation-delay: 0.2s;
       }
-      &:nth-of-type(4){
-          animation-delay: .3s;
+      &:nth-of-type(4) {
+        animation-delay: 0.3s;
       }
-      &:nth-of-type(5){
-          animation-delay: .4s;
+      &:nth-of-type(5) {
+        animation-delay: 0.4s;
       }
-      &:nth-of-type(6){
-          animation-delay: .5s;
+      &:nth-of-type(6) {
+        animation-delay: 0.5s;
       }
-      &:nth-of-type(7){
-          animation-delay: .6s;
+      &:nth-of-type(7) {
+        animation-delay: 0.6s;
       }
       span {
         padding-left: 1em;
@@ -87,5 +87,4 @@ export default {
     }
   }
 }
-
 </style>
